@@ -1,3 +1,5 @@
-*Project Portfolio
-Portfolioo project for Udacity Google Nanodegree.
+#Project Portfolio
+
+Portfolio project for Udacity Google Nanodegree Scholarship.
+
 Author: Mateusz Margos
