@@ -1,0 +1,71 @@
+/* main.css */
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+/* fontawesome */
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+/*
+    HEADER
+*/
+
+header, main, footer {
+  font-family: Dosis, sans-serif;
+}
+
+.header {
+  text-align: right;
+  box-shadow: 0 2px 3px 0 #404040;
+  height: 50px;
+}
+
+.logo {
+  width: 35px;
+  height: 35px;
+  float: left;
+  margin: 7.5px 7.5px;
+}
+
+.header h1 {
+  font-size: 32px;
+  display: inline;
+  float: right;
+  margin: 7.5px 10px 0 0;
+}
+
+/*
+    NAVIGATION
+*/
+
+nav {
+  margin-top: 50px;
+  position: absolute;
+  width: 200px;
+}
+
+.nav_element {
+  list-style: none;
+  display: block;
+}
+
+.rect {
+  width: 100px;
+  height: 75px;
+}
+
+.rect_1 {
+  background-color: #98dafc;
+}
+
+.rect_2 {
+  background-color: #daad86;
+}
+
+.rect_3 {
+  background-color: #312c32;
+}
