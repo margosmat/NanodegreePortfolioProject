@@ -8,64 +8,68 @@
     <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <div class="header">
-        <img class="logo" src="images/udacity.svg" alt="Udacity logo">
-        <div class="credentials">
-          <h1>Mateusz Margos</h1>
-          <p>Front-end Ninja</p>
+    <div class="container">
+      <header>
+        <div class="header">
+          <img class="logo" src="images/udacity.svg" alt="Udacity logo">
+          <div class="credentials">
+            <h1>Mateusz Margos</h1>
+            <p>Front-end Ninja</p>
+          </div>
         </div>
-      </div>
-    </header>
-    <nav>
-      <ul class="nav">
-        <li class="nav_element"><div class="rect rect_1"></div><p class="color_label">#98dafc</p></li>
-        <li class="nav_element"><div class="rect rect_2"></div><p class="color_label">#daad86</p></li>
-        <li class="nav_element"><div class="rect rect_3"></div><p class="color_label">#312c32</p></li>
-      </ul>
-    </nav>
-    <button class="nav_button"><p class="nav_button_arrow fontawesome-angle-right"></p></button>
-    <main>
-      <section class="main_image">
-        <figure>
-          <img src="images/sai-kiran-anagani-61187-unsplash_small_1x.jpg"
-                srcset="images/sai-kiran-anagani-61187-unsplash_small_1x.jpg 500w,
-                        images/sai-kiran-anagani-61187-unsplash_medium_1x.jpg 800w,
-                        images/sai-kiran-anagani-61187-unsplash_big_1x.jpg 1024w"
-                sizes="(min-width: 501px) 80vw, (min-width: 801px) 75vw, 100vw"
-                alt="Photo of screen with code on it.">
-          <figcaption>Photo by Sai Kiran Anagani on Unsplash</figcaption>
-        </figure>
-      </section>
-      <section class="featured_work">
-        <h2>Featured work</h2>
-        <div class="project_container">
-          <a class="project" href="https://codepen.io/margosmat/pen/RjVgOY">
-            <img src="images/animal_card.jpg" alt="Animal trading card sneak peak.">
-            <h2>Animal trading card</h2>
-          </a>
-          <p>https://codepen.io/margosmat/pen/RjVgOY</p>
-        </div>
-        <div class="project_container">
-          <a class="project" href="https://codepen.io/margosmat/pen/LOqPyL">
-            <img src="images/pixel_art_maker.jpg" alt="Pixel art maker sneak peak.">
-            <h2>Pixel art maker</h2>
-          </a>
-          <p>https://codepen.io/margosmat/pen/LOqPyL</p>
-        </div>
-        <div class="project_container">
-          <a class="project" href="https://github.com/margosmat/NanodegreePortfolioProject">
-            <img src="images/portfolio.jpg" alt="Portfolio sneak peak.">
-            <h2>Portfolio site</h2>
-          </a>
-          <p>https://github.com/margosmat/NanodegreePortfolioProject</p>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <p>Made with <b class="fontawesome-heart-empty"></b> by Mateusz Margos</p>
-    </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="script.js"></script>
+      </header>
+      <nav>
+        <ul class="nav">
+          <li class="nav_element"><div class="rect rect_1"></div><p class="color_label">#98dafc</p></li>
+          <li class="nav_element"><div class="rect rect_2"></div><p class="color_label">#daad86</p></li>
+          <li class="nav_element"><div class="rect rect_3"></div><p class="color_label">#312c32</p></li>
+        </ul>
+      </nav>
+      <button class="nav_button"><p class="nav_button_arrow fontawesome-angle-right"></p></button>
+      <!-- <main> -->
+        <section class="main_image">
+          <figure>
+            <img src="images/sai-kiran-anagani-61187-unsplash_small_1x.jpg"
+                  srcset="images/sai-kiran-anagani-61187-unsplash_small_1x.jpg 500w,
+                          images/sai-kiran-anagani-61187-unsplash_medium_1x.jpg 800w,
+                          images/sai-kiran-anagani-61187-unsplash_big_1x.jpg 1024w"
+                  sizes="(min-width: 501px) 80vw, (min-width: 801px) 75vw, 100vw"
+                  alt="Photo of screen with code on it.">
+            <figcaption>Photo by Sai Kiran Anagani on Unsplash</figcaption>
+          </figure>
+        </section>
+        <section class="featured_work">
+          <h2>Featured work</h2>
+          <div class="projects">
+            <div class="project_container">
+              <a class="project" href="https://codepen.io/margosmat/pen/RjVgOY">
+                <img src="images/animal_card.jpg" alt="Animal trading card sneak peak.">
+                <h2>Animal trading card</h2>
+              </a>
+              <p>https://codepen.io/margosmat/pen/RjVgOY</p>
+            </div>
+            <div class="project_container">
+              <a class="project" href="https://codepen.io/margosmat/pen/LOqPyL">
+                <img src="images/pixel_art_maker.jpg" alt="Pixel art maker sneak peak.">
+                <h2>Pixel art maker</h2>
+              </a>
+              <p>https://codepen.io/margosmat/pen/LOqPyL</p>
+            </div>
+            <div class="project_container">
+              <a class="project" href="https://github.com/margosmat/NanodegreePortfolioProject">
+                <img src="images/portfolio.jpg" alt="Portfolio sneak peak.">
+                <h2>Portfolio site</h2>
+              </a>
+              <p>https://github.com/margosmat/NanodegreePortfolioProject</p>
+            </div>
+          </div>
+        </section>
+        <footer>
+          <p>Made with <b class="fontawesome-heart-empty"></b> by Mateusz Margos</p>
+        </footer>
+      <!-- </main>       -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="script.js"></script>
+    </div>
   </body>
 </html>
