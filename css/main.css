@@ -34,19 +34,18 @@ body {
 
 .credentials {
   float: right;
-  width: 210px;
   color: #312c32;
+  display: flex;
+  flex-direction: column;
 }
 
 .header h1 {
   font-size: 32px;
-  display: block;
   float: right;
   margin: 7.5px 10px 0 0;
 }
 
 .header p {
-  display: block;
   float: right;
   margin: 0 7.5px 0 0;
   font-weight: bolder;
@@ -133,14 +132,10 @@ nav.nav_opened {
     MAIN
 */
 
-figcaption {
-font-size: 12px;
-width: 100%;
-text-align: center;
-}
-
-.main_image {
-  margin-top: 10px;
+.main_image figcaption {
+  font-size: 12px;
+  width: 100%;
+  text-align: center;
 }
 
 .main_image img {
@@ -148,10 +143,11 @@ text-align: center;
 }
 
 section.nav_opened {
-  filter: blur(2px);
+  filter: blur(1px);
 }
 
-.main_image, figure {
+.main_image,
+figure {
   width: 100%;
   margin: 0;
   transition: transform 0.3s ease;
@@ -183,7 +179,8 @@ section.nav_opened {
   max-height: 210px;
 }
 
-.project_container h2, .project_container p {
+.project_container h2,
+.project_container p {
   margin: 7px 0;
   word-break: break-word;
 }
@@ -207,6 +204,12 @@ footer {
 /*
     MEDIA QUERIES
 */
+
+@media screen and (max-width: 500px) {
+  .main_image {
+    margin-top: 10px;
+  }
+}
 
 @media screen and (min-width: 501px) {
   .container {
@@ -249,7 +252,6 @@ footer {
   .main_image {
     order: 2;
     width: 80%;
-    height: 313px;
   }
 
   .main_image img {
@@ -303,7 +305,7 @@ footer {
 @media screen and (min-width: 901px) {
   nav {
     order : 0;
-    height: 100vh;
+    height: 100%;
     position: fixed;
     float: left;
   }
@@ -312,7 +314,7 @@ footer {
     margin-top: 80px;
   }
 
-  header {
+  .header {
     width: 80%;
     position: fixed;
     float: right;
@@ -323,7 +325,7 @@ footer {
 
   .main_image {
     width: 80%;
-    margin: 80px 0 0 20%;
+    margin: 70px 0 0 20%;
   }
 
   .featured_work {
@@ -334,7 +336,6 @@ footer {
     width: 80%;
     margin-left: 20%;
   }
-
 }
 
 @media screen and (min-width: 1001px) {
@@ -347,7 +348,7 @@ footer {
     width: 200px;
   }
 
-  header {
+  .header {
     width: 800px;
     margin-left: 200px;
   }
