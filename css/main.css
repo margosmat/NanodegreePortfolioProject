@@ -55,7 +55,7 @@ body {
     NAVIGATION
 */
 
-nav {
+.nav {
   z-index: 2;
   position: absolute;
   height: calc(100% - 70px);
@@ -66,11 +66,11 @@ nav {
   transition: transform 0.4s ease;
 }
 
-nav.nav_opened {
+.nav.nav-opened {
   transform: translate(0, 0);
 }
 
-.nav_button {
+.nav-button {
   margin: 0;
   width: 50px;
   height: 50px;
@@ -82,11 +82,11 @@ nav.nav_opened {
   outline: none;
 }
 
-.nav_button.nav_opened {
+.nav-button.nav-opened {
   transform: translate(200.5px, 0);
 }
 
-.nav_button_arrow {
+.nav-button-arrow {
   margin: 0;
   display: inline-block;
   text-align: center;
@@ -95,15 +95,15 @@ nav.nav_opened {
   color: #312c32;
 }
 
-.nav_button_arrow.nav_opened {
+.nav-button-arrow.nav-opened {
   transform: rotate(180deg);
 }
 
-.nav {
+.nav-ul {
   padding-left: 50px;
 }
 
-.nav_element {
+.nav-element {
   list-style: none;
   display: block;
 }
@@ -113,19 +113,19 @@ nav.nav_opened {
   height: 75px;
 }
 
-.rect_1 {
+.rect-1 {
   background-color: #98dafc;
 }
 
-.rect_2 {
+.rect-2 {
   background-color: #daad86;
 }
 
-.rect_3 {
+.rect-3 {
   background-color: #312c32;
 }
 
-.color_label {
+.color-label {
   margin-top: 8px;
 }
 
@@ -133,36 +133,43 @@ nav.nav_opened {
     MAIN
 */
 
-.main_image figcaption {
+.main-image figcaption {
   font-size: 12px;
   width: 100%;
   text-align: center;
 }
 
-.main_image img {
+.main-image img {
   width: 100%;
 }
 
-section.nav_opened {
+.main-image.nav-opened,
+.featured-work.nav-opened,
+.footer.nav-opened p {
   filter: blur(1px);
 }
 
-.main_image,
+.main-image,
 figure {
   width: 100%;
   margin: 0;
   transition: transform 0.3s ease;
 }
 
-.featured_work {
+.featured-work {
   width: 90%;
   margin: auto;
 }
 
-.featured_work h2 {
+.featured-work h2 {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 0;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .project {
@@ -180,8 +187,8 @@ figure {
   max-height: 210px;
 }
 
-.project_container h2,
-.project_container p {
+.project-container h2,
+.project-container p {
   margin: 7px 0;
   word-break: break-word;
 }
@@ -190,7 +197,7 @@ figure {
     FOOTER
 */
 
-footer {
+.footer {
   margin-top: 20px;
   font-size: 16px;
   display: inline;
@@ -207,7 +214,7 @@ footer {
 */
 
 @media screen and (max-width: 500px) {
-  .main_image {
+  .main-image {
     margin-top: 10px;
   }
 }
@@ -224,7 +231,7 @@ footer {
     order: 0;
   }
 
-  nav {
+  .nav {
     order: 1;
     position: inherit;
     transform: translate(0, 0);
@@ -232,12 +239,12 @@ footer {
     box-shadow: none;
   }
 
-  .nav {
+  .nav-ul {
     padding: 0;
     margin: 0;
   }
 
-  .nav_element {
+  .nav-element {
     width: 90%;
     margin: auto;
   }
@@ -246,94 +253,80 @@ footer {
     width: 100%;
   }
 
-  .nav_button {
+  .nav-button {
     display: none;
   }
 
-  .main_image {
+  .main-image {
     order: 2;
     width: 80%;
   }
 
-  .main_image img {
+  .main-image img {
     object-fit: cover;
     height: 313px;
   }
 
-  .main_image figcaption {
+  .main-image figcaption {
     font-size: 16px;
   }
 
-  .featured_work {
+  .featured-work {
     order: 3;
   }
 
-  .projects {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .project_container {
+  .project-container {
     width: calc(100%/2 - 4px);
     margin: 0 2px;
   }
 
-  .project_container img {
+  .project-container img {
     height: 25vh;
   }
 
-  footer {
+  .footer {
     order: 4;
   }
 }
 
 @media screen and (min-width: 601px) {
-  .project_container img {
+  .project-container img {
     height: 35vh;
   }
 }
 
 @media screen and (min-width: 701px) {
-  .project_container {
+  .project-container {
     width: calc(100%/3 - 6px);
   }
 
-  .project_container img {
+  .project-container img {
     height: 25vh;
   }
 }
 
 @media screen and (min-width: 901px) {
-  nav {
-    order : 0;
-    height: 100%;
-    position: fixed;
-    float: left;
-  }
-
-  .nav_element:first-of-type {
-    margin-top: 80px;
+  header {
+    width: 100%;
   }
 
   .header {
     width: 80%;
-    position: fixed;
     float: right;
     margin-left: 20%;
     z-index: 2;
     background-color: #fff;
   }
 
-  .main_image {
+  .main-image {
     width: 80%;
-    margin: 70px 0 0 20%;
   }
 
-  .featured_work {
+  .featured-work {
     margin-left: 20%;
   }
 
-  footer {
+  .footer {
     width: 80%;
     margin-left: 20%;
   }
@@ -345,7 +338,7 @@ footer {
     margin: auto;
   }
 
-  nav {
+  .nav {
     width: 200px;
   }
 

@@ -1,20 +1,32 @@
 // script.js
 
-$(".nav_button").click(function() {
+$(".nav-button").click(function() {
   toggleNav();
 });
 
-$("section").click(function() {
-  if($("section").hasClass("nav_opened"))
+$(".main-image").click(function() {
+  if($(".main-image").hasClass("nav-opened"))
+  toggleNav();
+});
+
+$(".featured-work").click(function() {
+  if($(".featured-work").hasClass("nav-opened"))
+  toggleNav();
+});
+
+$(".footer").click(function() {
+  if($(".footer").hasClass("nav-opened"))
   toggleNav();
 });
 
 /**
-* @description Adds "nav_opened" class to specified elements
+* @description Adds "nav-opened" class to specified elements
 */
 function toggleNav() {
-  $("nav").toggleClass("nav_opened");
-  $(".nav_button").toggleClass("nav_opened");
-  $(".nav_button_arrow").toggleClass("nav_opened");
-  $("section").toggleClass("nav_opened");
+  $("nav").toggleClass("nav-opened");
+  $(".nav-button").toggleClass("nav-opened");
+  $(".nav-button-arrow").toggleClass("nav-opened");
+  $(".main-image").toggleClass("nav-opened");
+  $(".featured-work").toggleClass("nav-opened");
+  $(".footer").toggleClass("nav-opened");
 }
