@@ -88,10 +88,11 @@ nav.nav_opened {
 
 .nav_button_arrow {
   margin: 0;
-  font-size: 40px;
+  display: inline-block;
   text-align: center;
-  color: #312c32;
   transition: transform 0.3s ease;
+  font-size: 40px;
+  color: #312c32;
 }
 
 .nav_button_arrow.nav_opened {
